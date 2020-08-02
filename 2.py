@@ -1,3 +1,9 @@
+import codecs
+import sys
+
+save_stdin = sys.stdin
+sys.stdin = codecs.open("in/2-5.in", "r", "utf-8")
+
 N = 30
 a = []
 for i in range(N):
