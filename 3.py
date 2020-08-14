@@ -1,8 +1,6 @@
-import codecs
 import sys
 
-save_stdin = sys.stdin
-sys.stdin = codecs.open("in/3-5.in", "r", "utf-8")
+sys.stdin = open(file="in/3.in", mode="r", encoding="utf-8")
 
 N = 30
 a = []
