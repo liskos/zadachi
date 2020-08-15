@@ -2,8 +2,8 @@
 
 import sys as s
 
-s.stdin = open(file='in/5.in', mode='r', encoding='utf-8')
-# s.stdout = open(file='in/5.out', mode='w', encoding='utf-8')
+s.stdin = open(file='in/26.in', mode='r', encoding='utf-8')
+s.stdout = open(file='out/26.out', mode='w', encoding='utf-8')
 
 chislo = 1
 colichestvo = 0
@@ -13,3 +13,5 @@ while chislo != 0:
         colichestvo += 1
 
 print(colichestvo)
+
+# верно

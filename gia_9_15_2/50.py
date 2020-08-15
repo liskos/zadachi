@@ -1,9 +1,8 @@
-#50-ая задача
+# 50-ая задача
 import sys as s
 
-
-s.stdin = open(file='in/3.in', mode='r', encoding='utf-8')
-s.stout = open(file='out/3.out', mode='w', encoding='utf-8')
+s.stdin = open(file='in/50.in', mode='r', encoding='utf-8')
+s.stout = open(file='out/50.out', mode='w', encoding='utf-8')
 
 shesterki = []
 sravn = [1]
@@ -17,3 +16,5 @@ if shesterki > sravn:
     print(minimum_chislo)
 else:
     print("Таких числ нет")
+
+#  неверно, делается через цикл for, нет в конце нуля,  и без функции min
