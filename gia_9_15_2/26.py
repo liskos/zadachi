@@ -3,7 +3,7 @@
 import sys as s
 
 s.stdin = open(file='in/5.in', mode='r', encoding='utf-8')
-s.stdout = open(file='in/5.out', mode='w', encoding='utf-8')
+# s.stdout = open(file='in/5.out', mode='w', encoding='utf-8')
 
 chislo = 1
 colichestvo = 0
