@@ -1,19 +1,16 @@
 # 50-ая задача
-import sys as s
+import sys
 
-s.stdin = open(file='in/50.in', mode='r', encoding='utf-8')
-s.stout = open(file='out/50.out', mode='w', encoding='utf-8')
+sys.stdin = open(file='in/50.in', mode='r', encoding='utf-8')
+sys.stdout = open(file='out/50.out', mode='w', encoding='utf-8')
 
-shesterki = []
-sravn = [1]
-col_chifr = int(input())
-for _ in range(col_chifr):
+n = int(input())
+minimum = 30001
+for _ in range(n):
     chislo = int(input())
-    if chislo % 10 == 6:
-        shesterki.append(chislo)
-if sravn > shesterki:
-    "Таких цифр нет"
-else:
-    Minimum_6 = min(shesterki)
-    print(Minimum_6)
-#  неверно, делается через цикл for, нет в конце нуля,  и без функции min
+    if chislo % 10 == 6 and chislo < minimum:
+        minimum = chislo
+if minimum == 30001:
+    minimum = "Таких цифр нет"
+print(minimum)
+#  исправил на как надо
